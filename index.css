@@ -253,18 +253,21 @@ html {
     gap: 10px;
     
   }
-  .skills-list__item {
-    background-color: #39383a; /* Dark background */
-    color: #ffffff; /* White text */
-    padding: 6px 10px;
-    border-radius: 20px; /* Makes them pill-shaped */
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
+  
+    .skills-list__item {
+      background-color: #39383a; /* Dark background */
+      color: #ffffff; /* White text */
+      padding: 8px 11px; /* Adjusted padding for square shape */
+      border-radius: 5px; /* Small rounded corners (square-like) */
+      font-size: 12px;
+      font-weight: bold;
+      margin: 5px; /* Adds space between items */
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
   }
+  
+  
   /*.level {
     width: 70%;
     height: 8px;
