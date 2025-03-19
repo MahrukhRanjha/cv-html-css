@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="container">
-  <div class="profile">
-    <div class="profile-photo"></div>
+  <div class="profile" itemscope itemtype="https://schema.org/Person">
+    <div class="profile-photo" itemprop="image"></div>
     <div class="profile-info">
       <h2 class="heading heading-light">
       About
     </h2>
-    <p class="profile-text">
+    <p class="profile-text" itemprop="description">
       Hello! I’m Mahrukh Fatima. Skilled in developing Web applications using MongoDB , Express.js , React.js , Node.js .Proficient in HTML, CSS, JavaScript and Python,with a focus on building scalable and efficient solutions.Experienced in API integration, performance optimization, and creating responsive user interfaces.
     </p>
       <div class="contacts">
@@ -24,45 +24,45 @@
              <i class="fas fa-phone-volume"></i>
              Phone
           </h3>
-          <a href="#" class="contacts-text">+(92) 3366297167</a>
+          <a href="#" class="contacts-text" itemprop="telephone">+(92) 3366297167</a>
         </div>
         <div class="contacts-item">
           <h3 class="contacts-title">
              <i class="fas fa-envelope"></i>
              Email
           </h3>
-          <a href="mailto:Robertsmith@gamil.com" class="contacts-text">mahrukhranjha786@gmail.com</a>
+          <a href="mahrukhranjha786@gamil.com" class="contacts-text" itemprop="email">mahrukhranjha786@gmail.com</a>
         </div>
         <div class="contacts-item">
           <h3 class="contacts-title">
              <i class="fab fa-linkedin"></i>
              Linked in
           </h3>
-          <a href="https://www.linkedin.com/in/mahrukh-fatima-2568112b5/" class="contacts-text">linkedin.com/in/mahrukh-fatima</a>
+          <a href="https://www.linkedin.com/in/mahrukh-fatima-2568112b5/" class="contacts-text" itemprop="sameAs">linkedin.com/in/mahrukh-fatima</a>
         </div>
-        <div class="contacts-item">
+        <div class="contacts-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <h3 class="contacts-title">
              <i class="fas fa-map-marker-alt"></i>
              Home
           </h3>
           <div class="contacts-text">
-            Sargodha Pakistan
+            <span itemprop="addressLocality">Sargodha</span> <span itemprop="addressCountry">Pakistan</span>
           </div>
         </div>
       </div>
       <h2 class="heading heading-light">Languages</h2>
       <div class="languages">
         <ul class="languages-list">
-          <li> Urdu </li>
-          <li> English </li>
+          <li itemprop="knowsLanguage">Urdu</li>
+          <li itemprop="knowsLanguage">English</li>
           
         </ul>
       </div>
       <h2 class="heading heading-light">Interests</h2>
-      <ul class="interests">
-        <li><i class="fas fa-code"></i> Web Development</li>
-        <li><i class="fas fa-book"></i> Reading</li>
-        <li><i class="fas fa-laptop"></i> Technology</li>
+      <ul class="interests" >
+        <li><i class="fas fa-code" itemprop="knowsAbout"></i> Web Development</li>
+        <li><i class="fas fa-book" itemprop="knowsAbout"></i> Reading</li>
+        <li><i class="fas fa-laptop" itemprop="knowsAbout"></i> Technology</li>
     </ul>
     </div>
   </div>
@@ -71,93 +71,117 @@
     
       
       <div class="about">
-        <h1 class="name">Mahrukh Fatima</h1>
-        <span class="position">Web Developer / Designer</span>
+        <h1 class="name" itemprop="name">Mahrukh Fatima</h1>
+        <span class="position" itemprop="jobTitle">Web Developer / Designer</span>
+        </div>
+        <div class="experience">
+          <h2 class="heading heading_dark">
+              Experience
+          </h2>
+          <ul class="list">
+           
+            <li class="list-item" itemprop="hasOccupation"  itemtype="https://schema.org/Occupation">
+              <h4 class="list-item__title">
+                  <span itemprop="name">Freelance Web Developer</span>
+              </h4>
+              <span class="list-item__date">
+                  <time itemprop="startDate" datetime="2023-01">Feb 2024</time> - 
+                  <time itemprop="endDate" datetime="Present">March 2024</time>
+              </span>
+              <p class="list-item__text" itemprop="description">
+                A web-based expense tracking application with a responsive Bootstrap UI, interactive reports, and structured tracking. It features an accordion-based FAQ, styled buttons, SVG-based graphical representations, and form sections for user inputs.</p>
+              
+          </li>
+            
+            
+          </ul>
         </div>
       <div class="experience">
         <h2 class="heading heading_dark">
             Personal Projects
         </h2>
         <ul class="list">
-          <li class="list-item">
-            <h4 class="list-item__title">Book Store Management System</h4>
-            <span class="list-item__date">Feb 2023 - April 2023</span>
-            <p class="list-item__text">This web project is a comprehensive platform for efficient book management. Admins can add, update, view, and remove books seamlessly. Users can explore books with details like title, author, and description and conveniently use the "Add to Cart" feature for purchases. The system ensures a smooth experience for both administrators and customers</p>
+          <li class="list-item" itemprop="publishingPrinciples" itemscope itemtype="https://schema.org/CreativeWork">
+            <h4 class="list-item__title" itemprop="name">Book Store Management System</h4>
+            <span class="list-item__date" itemprop="dateCreated">Feb 2023 - April 2023</span>
+            <p class="list-item__text" itemprop="abstract">This web project is a comprehensive platform for efficient book management. Admins can add, update, view, and remove books seamlessly. Users can explore books with details like title, author, and description and conveniently use the "Add to Cart" feature for purchases. The system ensures a smooth experience for both administrators and customers</p>
           </li>
-          <li class="list-item">
-            <h4 class="list-item__title">Expense Management System</h4>
-            <span class="list-item__date">Feb 2024 - Mar 2024</span>
-            <p class="list-item__text">A web-based expense tracking application with a responsive Bootstrap UI, interactive reports, and structured tracking. It features an accordion-based FAQ, styled buttons, SVG-based graphical representations, and form sections for user inputs. Future enhancements may include backend integration for data storage and analytic</p>
+          <li class="list-item" itemprop="publishingPrinciples" itemscope itemtype="https://schema.org/CreativeWork">
+            <h4 class="list-item__title" itemprop="name">Online Food Ordering App</h4>
+            <span class="list-item__date"  itemprop="dateCreated">May 2024 - Aug 2024</span>
+            <p class="list-item__text" itemprop="abstract">A MERN stack-based food ordering system with dynamic menus, real-time cart management, user authentication, and order tracking. It features a responsive UI with React and a robust backend using Node.js, Express, and MongoDB.</p>
           </li>
-          <li class="list-item">
-            <h4 class="list-item__title">Online Food Ordering App</h4>
-            <span class="list-item__date">May 2024 - Aug 2024</span>
-            <p class="list-item__text">A MERN stack-based food ordering system with dynamic menus, real-time cart management, user authentication, and order tracking. It features a responsive UI with React and a robust backend using Node.js, Express, and MongoDB.</p>
-          </li>
-          <li class="list-item">
-            <h4 class="list-item__title">LLM-driven Brand Reputation Analysis</h4>
-            <span class="list-item__date">Sept 2024 - Present</span>
-            <p class="list-item__text">This is my Final Year Project, utilizing NLP to assess customer sentiments and product perceptions. It helps brands monitor reputation, identify trends, and make data-driven decisions.</p>
+          <li class="list-item" itemprop="publishingPrinciples" itemscope itemtype="https://schema.org/CreativeWork">
+            <h4 class="list-item__title" itemprop="name">LLM-driven Brand Reputation Analysis</h4>
+            <span class="list-item__date"  itemprop="dateCreated">Sept 2024 - Present</span>
+            <p class="list-item__text" itemprop="abstract">This is my Final Year Project, utilizing NLP to assess customer sentiments and product perceptions. It helps brands monitor reputation, identify trends, and make data-driven decisions.</p>
           </li>
         </ul>
       </div>
-      <div class="education">
+      <div class="education" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
         <h3 class="heading_dark">Education</h3>
+        <p class="list-item__text" itemprop="recognizedBy" >
+          <h4><span itemprop="name" class="education-heading">University of Sargodha</span></h4>
+        </p>
+        <div itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+        <p class="education-subheading" itemprop="credentialCategory">Bachelor in Computer Science</p>
+      </div>
+      <p class="list-item__text" itemprop="recognizedBy" >
+        <h4><span itemprop="name" class="education-heading">Readers Group of Colloges</span></h4>
+      </p>
+      <div itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+      <p class="education-subheading" itemprop="credentialCategory">Intermediate</p>
+    </div>
+        
+      </div>
       
           
-            <h4 class="education-heading">University of Sargodha</h4>
-            <div class="education-subheading">Bachelor in Computer Science</div>
-            <div class="education-date">Nov 2021 - Sep 2025</div>
             
-          
-            <h4 class="education-heading">Readers Group of Colloges</h4>
-            <div class="education-subheading">Intermediate</div>
-            <div class="education-date">Aug 2019 - Sep 2021</div>
+         
              
        
-      </div>
+      
       <div class="skills">
         <h2 class="heading heading_dark heading_skills">
           Skills
         </h2>
         <ul class="skills-list">
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             HTML
             <div class="level level-90"></div>
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             CSS
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             JavaScript
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
              ReactJs 
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             MongoDB
          </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             NodeJs 
-            <div class="level level-70"></div>
+            <div class="level level-70" itemprop="skills"></div>
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             ExpressJs 
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             PHP 
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             C++
-            <div class="level level-70"></div>
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
            Python
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
             Shopify
           </li>
-          <li class="skills-list__item">
+          <li class="skills-list__item" itemprop="skills">
              Jekyll
           </li>
 
